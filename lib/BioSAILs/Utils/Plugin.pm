@@ -1,13 +1,15 @@
 package BioSAILs::Utils::Plugin;
 
 use MooseX::App::Role;
+use namespace::autoclean;
+
 use IO::File;
 use File::Path qw(make_path remove_tree);
 
 use IPC::Cmd;
 use Cwd qw(getcwd);
 use Try::Tiny;
-use List::MoreUtils qw(uniq);
+use List::Util qw(uniq);
 
 with 'MooseX::Object::Pluggable';
 
