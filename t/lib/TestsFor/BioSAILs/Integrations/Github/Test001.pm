@@ -1,4 +1,5 @@
 package TestsFor::BioSAILs::Integrations::GitHub::Test001;
+# package TestsFor::BioSAILs::GitIntegration::Test001;
 
 use Moose;
 use Test::Class::Moose;
@@ -11,7 +12,7 @@ use Capture::Tiny ':all';
 use File::Slurp;
 use File::Spec;
 
-## This tests the construction of new, submit_jobs, and execute_job
+##This test is a placeholder for github integration tests
 
 sub test_000 : Tags(require) {
     my $self = shift;

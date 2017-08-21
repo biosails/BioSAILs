@@ -75,7 +75,6 @@
       },
       "test" : {
          "requires" : {
-            "BioSAILs::GitIntegration" : "0",
             "File::Spec::Functions" : "0",
             "FindBin" : "0",
             "Moose" : "0",
