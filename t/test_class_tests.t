@@ -7,6 +7,7 @@ use Test::Class::Moose::Runner;
 if ( $ENV{'TRAVIS'} || $ENV{'DEV'} ) {
     Test::Class::Moose::Runner->new(
         test_classes => [
+            'TestsFor::BioSAILs::Utils::Test001',
             'TestsFor::BioSAILs::Integrations::GitHub::Test001',
             'TestsFor::BioSAILs::Utils::LoadConfigs::Test001',
         ],

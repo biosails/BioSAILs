@@ -19,7 +19,6 @@ has 'comment_char' => (
     default => '#',
 );
 
-
 sub print_cmd_line_opts {
     my $self = shift;
 
@@ -35,7 +34,13 @@ sub print_cmd_line_opts {
     $cmd_line_opts .= "$self->{comment_char}\t" . $ARGV[0] . "\n" if $ARGV[0];
     for ( my $x = 1 ; $x <= $#ARGV ; $x++ ) {
         next unless $ARGV[$x];
-        $cmd_line_opts .= "$self->{comment_char}\t$ARGV[$x]\t\\\n";
+        $cmd_line_opts .= "$self->{comment_char}\t$ARGV[$x]";
+        if ( $x == $#ARGV ) {
+            $cmd_line_opts .= "\n";
+        }
+        else {
+            $cmd_line_opts .= "\t\\\n";
+        }
     }
 
     $cmd_line_opts .= "$self->{comment_char}\n\n";
@@ -46,7 +51,7 @@ sub print_cmd_line_opts {
 sub print_config_data {
     my $self = shift;
 
-    return "" unless scalar keys %{$self->_merged_config_data};
+    return "" unless scalar keys %{ $self->_merged_config_data };
     my $config_str  = Dump( $self->_merged_config_data );
     my @split       = split( "\n", $config_str );
     my $config_opts = "";
