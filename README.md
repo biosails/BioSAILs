@@ -1,14 +1,14 @@
 # NAME
 
-BioSails - Blah blah blah
+BioSAILs - Blah blah blah
 
 # SYNOPSIS
 
-    use BioSails;
+    use BioSAILs;
 
 # DESCRIPTION
 
-BioSails is
+BioSAILs is
 
 # AUTHOR
 
