@@ -1,4 +1,4 @@
-package TestsFor::BioSails::GitIntegration::Test001;
+package TestsFor::BioSAILs::Integrations::GitHub::Test001;
 
 use Moose;
 use Test::Class::Moose;
@@ -18,3 +18,5 @@ sub test_000 : Tags(require) {
 
     ok(1);
 }
+
+1;
