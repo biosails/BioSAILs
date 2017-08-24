@@ -1,6 +1,6 @@
 use strict;
 use Test::More;
-use BioSAILs::GitIntegration;
+use BioSAILs;
 
 # replace with the actual test
 ok 1;

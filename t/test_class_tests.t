@@ -16,7 +16,7 @@ if ( $ENV{'TRAVIS'} || $ENV{'DEV'} ) {
 else{
     Test::Class::Moose::Runner->new(
         test_classes => [
-            'TestsFor::BioSAILs::GitIntegration::Test001',
+            'TestsFor::BioSAILs::Integrations::GitHub::Test001',
         ],
     )->runtests;
 }

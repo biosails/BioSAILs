@@ -1,4 +1,7 @@
 Revision history for BioSAILs
 
 {{$NEXT}}
+	- Cleaned up multiple 'uniq' calls https://github.com/biosails/BioSAILs/issues/1
+
+0.01  2017-08-21 08:14:01 GST
         - Initial release

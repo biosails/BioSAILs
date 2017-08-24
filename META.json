@@ -54,8 +54,7 @@
             "Hash::Merge" : "0",
             "IO::File" : "0",
             "IPC::Cmd" : "0",
-            "List::MoreUtils" : "0",
-            "List::Uniq" : "0",
+            "List::Util" : "0",
             "Moose::Role" : "0",
             "MooseX::App::Role" : "0",
             "MooseX::Object::Pluggable" : "0",
@@ -75,7 +74,6 @@
       },
       "test" : {
          "requires" : {
-            "BioSAILs::GitIntegration" : "0",
             "File::Spec::Functions" : "0",
             "FindBin" : "0",
             "Moose" : "0",
@@ -90,6 +88,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/biosails/BioSAILs/issues"
+      },
+      "homepage" : "https://github.com/biosails/BioSAILs",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/biosails/BioSAILs.git",
+         "web" : "https://github.com/biosails/BioSAILs"
+      }
+   },
    "version" : "0.01",
    "x_serialization_backend" : "Cpanel::JSON::XS version 3.0225"
 }

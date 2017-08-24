@@ -14,7 +14,7 @@ use Sort::Versions;
 use Version::Next qw/next_version/;
 
 use Cwd;
-use List::Uniq ':all';
+use List::Util qw(uniq);
 use File::Path qw(make_path);
 use File::Slurp;
 use File::Spec;
