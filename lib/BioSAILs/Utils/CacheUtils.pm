@@ -59,7 +59,9 @@ sub print_config_data {
     $config_opts .= "$self->{comment_char}\n";
     $config_opts .= "$self->{comment_char} " . "Invoked with configuration:\n";
 
-    map { $config_opts .= "# " . $_ } @split;
+    map { $config_opts .= "# " . $_ ."\n" } @split;
+
+    $config_opts .= "\n";
 
     return $config_opts;
 }
