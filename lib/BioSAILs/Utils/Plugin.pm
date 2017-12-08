@@ -9,7 +9,7 @@ use File::Path qw(make_path remove_tree);
 use IPC::Cmd;
 use Cwd qw(getcwd);
 use Try::Tiny;
-use List::Util qw(uniq);
+use List::Util 1.44 qw(uniq);
 
 with 'MooseX::Object::Pluggable';
 
